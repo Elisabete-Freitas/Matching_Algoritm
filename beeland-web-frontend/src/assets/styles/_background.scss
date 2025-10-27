@@ -1,0 +1,5 @@
+@each $color, $value in $theme-colors {
+  .bg-inverse-icon-#{"FFFFFF"} {
+    @include bg-inverse-icon($value);
+  }
+}
