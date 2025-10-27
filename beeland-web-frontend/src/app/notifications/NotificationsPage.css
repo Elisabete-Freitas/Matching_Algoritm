@@ -1,0 +1,123 @@
+.notifications-content-layout {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 8.5rem);
+    width: 100%;
+    top: 2rem;
+    position: relative;
+    padding: 1rem 3rem;
+}
+
+
+.notifications-content-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.notification-card.unread {
+    background-color: #f9f9f9;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.notification-message {
+    flex-basis: 50%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.notification-timestamp {
+    font-size: 12px;
+    color: #888;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark-as-read-btn {
+    align-self: flex-end;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.mark-as-read-btn:hover {
+    background-color: var(--focus-color);
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-button.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .pagination-arrow {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: var(--focus-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-arrow[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .new-tag {
+    background-color: var(--focus-color);
+    color: white;
+    align-self: flex-start; 
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+  
+
+
+@media screen and (max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,31 @@
+.map-legend {
+    position: relative;
+    bottom: 100px;
+    left: 2.5rem;
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    border-radius: 0.5rem;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.legend-item{
+    display: flex;
+    font-size: small;
+    text-align: left;
+    width: 50%;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+

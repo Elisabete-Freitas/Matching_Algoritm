@@ -1,0 +1,54 @@
+.content-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns content vertically in the center */
+  align-items: center; /* Aligns content horizontally in the center */
+  padding: 20px;
+  text-align: center; /* Center the title */
+  height: 100%;
+  background: white;
+  }
+  
+  .content-title {
+    font-size: 32px;
+    margin-bottom: 50px; /* Add space below the title */
+    color: var(--text-color); /* Use the text-color variable */
+    margin-top: -6rem;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    justify-content: center; /* Distribute cards with equal space around */
+    flex-wrap: wrap; /* Wrap onto next row if not enough space */
+    gap: 20px; /* Space between cards */
+    align-items: center;
+    height: 20rem;
+
+  }
+  
+  .card {
+    width: 200px; /* Width of cards */
+    height: 200px; /* Height of cards */
+    background: white; /* Use the secondary-color variable */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 1px solid var(--border-color); /* Use the border-color variable */
+    border-radius: 8px; /* Rounded corners for cards */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+    color: var(--text-color); /* Use the text-color variable */
+  }
+
+  .card .logo-wrapper{
+    padding: 1rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+    background: var(--focus-color); /* Change to select-color on hover */
+    color: var(--background-color); /* Contrast text on hover */
+  }
+  
