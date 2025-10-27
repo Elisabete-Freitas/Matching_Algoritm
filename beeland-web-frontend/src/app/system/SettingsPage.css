@@ -1,0 +1,62 @@
+.settings-page-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.settings-page-form{
+   display: flex;
+   flex-direction: row; /* Alinha os elementos verticalmente */
+   padding: 2rem 0rem;
+   gap: 1rem;
+}
+
+.settings-page-form-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ajusta a largura para 100% */
+}
+
+.settings-page-form-input-wrapper input,
+.settings-page-form-input-wrapper select {
+    width: 100%;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+.settings-submit-btn{
+    width: auto; /* Ajusta a largura automaticamente */
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 1%;
+    padding: 1rem;;
+}
+
+.settings-submit-btn:hover{
+    background-color: var(--focus-color);
+}
+
+.settings-table{
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.settings-delete-btn{
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.3rem 1.5rem;
+    background-color: var(--error-color);
+}
+

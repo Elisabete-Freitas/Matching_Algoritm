@@ -1,0 +1,64 @@
+.content{
+margin:0%;
+display: flex;
+flex-direction: column;
+padding: 5%;
+text-align: left;
+background-color: rgb(245, 245, 235);
+}
+  .content_profile {
+    margin: 2%;
+    background-color: White;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--disabled-color); 
+    border-radius: 10px;
+  }
+
+  .content_poly{
+    margin: 2%;
+    background-color: White;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--disabled-color); 
+    border-radius: 10px;
+  }
+  
+  .content-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5%;
+  }
+  
+ 
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .view-profile{
+    padding: 2%;
+    text-align: left;
+  }
+  .pending-requests{
+    background-color: White;
+  }
+  .button-reject {
+    color: white;
+    background-color: var(--select-color);
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+  
+  

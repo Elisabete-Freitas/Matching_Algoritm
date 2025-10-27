@@ -1,0 +1,246 @@
+.content-layout {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Aligns content vertically in the center */
+  align-items: center;
+  /* Aligns content horizontally in the center */
+  padding: 20px;
+  text-align: center;
+  /* Center the title */
+  height: 100vh;
+  background: white;
+  background-image: url("../assets/_beeland_background_gray.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  transition: all 0.5s ease-in-out;
+  /*  filter: grayscale(100%); */
+
+}
+
+.goback-register {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 0.35rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.goback-register:hover {
+  border: 1px solid var(--focus-color);
+  transition: ease-in-out 0.3s all;
+}
+
+.register-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  /* Add space below the title */
+  color: var(--text-color);
+  /* Use the text-color variable */
+  margin-top: -6rem;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Distribute cards with equal space around */
+  flex-wrap: wrap;
+  /* Wrap onto next row if not enough space */
+  gap: 100px;
+  /* Space between cards */
+  align-items: center;
+  height: 20rem;
+
+}
+
+.card {
+  width: 200px;
+  /* Width of cards */
+  height: 200px;
+  /* Height of cards */
+  background: white;
+  /* Use the secondary-color variable */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border: 1px solid var(--border-color);
+  /* Use the border-color variable */
+  border-radius: 8px;
+  /* Rounded corners for cards */
+  cursor: pointer;
+  /* Hand cursor on hover */
+  transition: transform 0.3s ease;
+  /* Smooth transform effect */
+  color: var(--text-color);
+  /* Use the text-color variable */
+}
+
+.card .logo-wrapper {
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Raise card on hover */
+  background: var(--focus-color);
+  /* Change to select-color on hover */
+  color: var(--background-color);
+  /* Contrast text on hover */
+}
+
+
+.button-agricultor,
+.button-apicultor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.button-agricultor {
+  background: var(--focus-color);
+}
+
+.button-apicultor {
+  background: var(--primary-color);
+}
+
+
+
+.button-apicultor:hover,
+.button-agricultor:hover {
+  background: var(--select-color);
+  transition: ease-in-out 0.3s all;
+}
+
+.register-logo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.header-title span>p {
+  width: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: xx-large;
+  color: var(--text-color);
+  margin-left: 1rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  /* Applying Roboto font */
+  font-weight: 100;
+  margin-top: 0.8rem;
+
+}
+
+/*@media only screen and (max-width: 600px) {
+  .header-title {
+    position: absolute;
+    top: 2rem;
+    right: 40%;
+    color: var(--text-color);
+    border-left: 1px solid var(--text-color);
+  }
+
+  .register-logo {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 35%;
+  }
+
+  .goback-register {
+    position: fixed;
+    bottom: 5rem;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 0.35rem 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .register-wrapper {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .register-title {
+    margin-top: 1rem;
+  }
+
+
+  .register-item {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+  }
+}*/
+@media (max-width: 600px) {
+  .content-layout {
+    
+    margin-top: 12%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .register-logo {
+    width: 100px !important;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .header-title p {
+    font-size: 16px;
+    text-align: center !important;
+  }
+
+  .register-title {
+    font-size: 22px;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .register-subtitle {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .register-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-wrapper img {
+    width: 100px;
+    height: auto;
+  }
+
+  .button-apicultor,
+  .button-agricultor {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .goback-register {
+    margin-top: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+ 
+}

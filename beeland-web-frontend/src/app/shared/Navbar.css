@@ -1,0 +1,200 @@
+/* Estilo para a barra de navegação */
+.navbar {
+  background-color: white;
+  /* Cor de fundo da barra de navegação */
+  padding: 50px 20px;
+  /* Espaçamento interno da barra de navegação */
+  left: 0px !important;
+  height: 5.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Estilo para o link do Navbar */
+.navbar .nav-link {
+  color: var(--text-color);
+  /* Cor do texto do link */
+  font-size: 1rem;
+  /* Tamanho da fonte do link */
+  font-weight: bold;
+  /* Peso da fonte do link */
+  text-decoration: none;
+  /* Remover sublinhado do texto */
+}
+
+/* Estilo para o link ativo do Navbar */
+.navbar .nav-link.active {
+  color: #59817F;
+  /* Cor do texto do link ativo */
+}
+
+/* Estilo para o menu dropdown do Navbar */
+.navbar .dropdown-menu {
+  background-color: white;
+  /* Cor de fundo do menu dropdown */
+  border: none;
+  /* Remover borda do menu dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra do menu dropdown */
+  border: 1px solid var(--text-color);
+}
+
+/* Estilo para os itens do menu dropdown */
+.navbar .dropdown-item {
+  color: var(--text-color);
+  /* Cor do texto dos itens do menu dropdown */
+  font-size: 1rem;
+  /* Tamanho da fonte dos itens do menu dropdown */
+}
+
+/* Estilo para o separador do menu dropdown */
+.navbar .dropdown-divider {
+  border-top: 1px solid #E3E9ED;
+  /* Estilo da linha separadora */
+}
+
+/* Estilo para o título do menu dropdown */
+.navbar .dropdown-header {
+  color: #59817F;
+  /* Cor do texto do título do menu dropdown */
+  font-size: 0.9rem;
+  /* Tamanho da fonte do título do menu dropdown */
+}
+
+/* Estilo para o botão de menu (hamburguer) quando está expandido */
+.navbar .navbar-toggler {
+  border-color: var(--text-color);
+  /* Cor da borda do botão de menu */
+}
+
+/* Estilo para o ícone do botão de menu (hamburguer) quando está expandido */
+.navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Estilo para o botão de menu (hamburguer) ao passar o mouse sobre ele */
+.navbar .navbar-toggler:hover {
+  background-color: var(--select-color);
+  /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o botão de menu (hamburguer) quando está expandido e ao passar o mouse sobre ele */
+.navbar .navbar-toggler:not(.collapsed):hover {
+  background-color: #f8f9fa;
+  /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o menu dropdown do botão de menu (hamburguer) */
+.navbar .navbar-collapse {
+  background-color: #E3E9ED;
+  /* Cor de fundo do menu dropdown */
+  padding: 10px;
+  /* Espaçamento interno do menu dropdown */
+}
+
+/* Estilo para o link do menu dropdown do botão de menu (hamburguer) */
+.navbar .navbar-nav .nav-link {
+  color: #59817F;
+  /* Cor do texto do link */
+  font-size: 1rem;
+  /* Tamanho da fonte do link */
+  font-weight: bold;
+  /* Peso da fonte do link */
+  text-decoration: none;
+  /* Remover sublinhado do texto */
+  margin-right: 0;
+  /* Remover margem à direita */
+}
+
+/* Estilo para o link ativo do menu dropdown do botão de menu (hamburguer) */
+.navbar .navbar-nav .nav-link.active {
+  color: #59817F;
+  /* Cor do texto do link ativo */
+}
+
+.navbar-container {
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  padding: 3rem;
+  padding-top: 2.5rem;
+
+}
+
+.dropdown-item:hover {
+  background: var(--primary-color);
+  color: var(--text-color);
+  /* Change this color to your desired hover background color */
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  border: none;
+  box-shadow: none !important;
+}
+
+.dropdown-toggle.btn.btn-link {
+  border: none;
+  box-shadow: none !important;
+  color: #59817f;
+}
+
+.user-role-text {
+  border-bottom: 3px solid var(--primary-color);
+  padding: 0.3rem 0rem;
+
+  margin-left: 1rem;
+}
+.notifications-wrapper{
+  width: 1rem;
+  margin-left: 2rem;
+  padding-top: 0.4rem ;
+  margin-right: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.notifications-wrapper .notification-count {
+  position: absolute;
+  top: 0.4rem;
+  right: -0.8rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 0.1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: x-small;
+}
+
+.user-wrapper {
+  display: flexbox;
+
+  flex-wrap: wrap;
+  min-width: 2rem;
+}
+
+.navbar-container .logo-wrapper {
+  width: 200px;
+}
+
+@media screen and (max-width: 618px) {
+  .navbar-container .logo-wrapper {
+    width: 9rem;
+    margin-left: -1.5rem;
+  }
+
+  .navbar-container{
+    padding-right: 0.5rem;
+  }
+
+  .user-wrapper {
+    display: none;
+  }
+
+}
