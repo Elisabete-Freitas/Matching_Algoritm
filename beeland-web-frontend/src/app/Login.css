@@ -1,0 +1,146 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--primary-color);
+  background-image: url("./assets/_beeland_background.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-card-wrapper {
+  width: 250px;
+  text-align: center;
+  background: white;
+  height: 400px;
+  border-radius: 1rem;
+  box-shadow: 0px 25px 25px 5px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.login-text-wrapper {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+.login-form-wrapper {
+  padding: 0rem;
+}
+
+.register-item {
+  cursor: pointer;
+  color: white;
+  background: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.register-item:hover {
+  transition: linear 0.5s ease-in-out;
+  color: white;
+  background: var(--focus-color);
+  border-bottom: 2px solid white;
+}
+
+.login-form-item-wrapper {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.login-input-item-wrapper:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: none !important;
+}
+
+
+.footer-developer {
+  font-size: x-small;
+  color: var(--focus-color);
+  margin-top: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.error-wrapper {
+
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: x-small;
+  background: rgb(233, 100, 17);
+  border-radius: 2rem;
+  color: white;
+}
+
+.login-button-btn {
+  background: var(--text-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  margin-top: -0.5rem;
+}
+
+.login-button-btn:hover {
+  background: var(--focus-color);
+}
+
+.header-title {
+  position: absolute;
+  top: 4rem;
+  right: 12rem;
+  color: var(--text-color);
+  font-size: large;
+  border-left: 2px solid var(--text-color);
+}
+
+.header-title span>p {
+  width: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: xx-large;
+  color: var(--text-color);
+  margin-left: 1rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  /* Applying Roboto font */
+  font-weight: 100;
+  margin-top: 0.8rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .funding {
+    max-width: 100%;
+    height: auto;
+  }
+  .login-card-wrapper{
+    margin-top: 70%;
+  }
+  .header-title {
+    position: absolute;
+    top: 2rem;
+    right: 40%;
+    color: var(--text-color);
+    border-left: 1px solid var(--text-color);
+  }
+  
+  .header-title span>p{
+    font-size: x-small;
+
+  }
+
+  .register-item{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+  }
+}

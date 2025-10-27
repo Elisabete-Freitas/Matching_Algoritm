@@ -1,0 +1,42 @@
+:root{
+    --primary-color: #F9CD22;
+    --secondary-color: #E7E7E7;
+    --text-color: #000000;
+    --background-color: #F5F5EB;
+    --select-color: #ff9c31;
+    --border-color: #dadee2;
+    --disabled-color: #bdbdbd;
+    --focus-color: #00662B;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --alternative-color: #471b7a;
+}
+
+.main-container {
+    position: relative;
+    text-align: center; /* Center the title */   
+    height: calc(100vh - 6.5rem);
+    top: 3.5rem;
+    z-index: 0;
+  }
+/* Initial state with opacity 0 and transformed position */
+.move-effect {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInMove 0.5s ease-in-out forwards;
+  }
+
+  .move-effect-one {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMove 0.3s ease-in-out forwards;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes fadeInMove {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

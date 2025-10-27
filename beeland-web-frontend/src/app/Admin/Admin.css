@@ -1,0 +1,431 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 30%; /* Aumenta o tamanho do modal */
+    height: 25%;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .modal-logo{
+    color: var(--secondary-color);
+  }
+  
+  .modal-content h3 {
+    font-size: 20px; /* Letra menor */
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .modal-close-button:hover {
+    color: #dc3545; /* Cor ao passar o mouse */
+  }
+  
+  .modal-buttons-wrapper {
+ 
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .modal-cancel-btn{
+    background-color: var(--focus-color);
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.15rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: -2.2rem;
+    left: 12rem;
+  }
+  
+ 
+  
+  .modal-buttons-wrapper button {
+    border: none;
+    border-radius: 1.5rem;
+    margin: 0 5px;
+    padding: 0.7rem;
+    width: 6rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-ok{
+    background: var(--focus-color);
+    border: 1px solid var(--focus-color);
+    cursor: pointer;
+  }
+  
+  .btn-ok:hover{
+    border: 1px solid var(--focus-color);
+    background: white;
+    color: var(--primary-color)
+  }
+  
+  .btn-no{
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  .btn-no:hover{
+    border: 1px solid var(--secondary-color);
+    background: white;
+    color: var(--primary-color)
+  }
+  
+    /* Estilos para o título */
+    .register-heading {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    
+    /* Estilos para os campos de entrada e rótulos */
+    .form-group {
+      margin: 10px 0;
+      text-align: left;
+    }
+    .form-group input {
+      border: 1px solid #8e9475;
+    }
+    
+    .form-label {
+      font-weight: bold;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    /* Estilos para os ícones de disponibilidade */
+    .availability-icon {
+      font-size: 18px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    
+    
+    
+   
+    
+    /* Estilos para a mensagem de erro */
+    .error-message {
+     
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    
+    /* Estilos para o botão de registro */
+    .default-button {
+  
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+   
+    .close-button {
+      background-color:white;
+      color:#5D643F;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: left;
+    }
+  
+    .close-button:hover {
+      background-color: transparent;
+    }
+    .producer-info {
+      text-align: left;
+      flex-direction: column !important;
+      padding: 10px; /* Opcional: margem interna para espaçamento */
+  
+    }
+    
+    
+    .user-tables-container-wrapper {
+      /* Style for the overall wrapper */
+      padding: 0 15px; /* Example padding */
+      width: 98%;
+  
+    }
+    
+    .user-table-container {
+      /* Style for each table container */
+      background-color: #fff; /* Example background color */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for depth */
+      margin-bottom: 20px; /* Spacing between tables */
+      padding: 15px; /* Padding inside the container */
+      border-radius: 8px; /* Rounded corners */
+    }
+    
+    .user-table-container .card-table-header {
+      background-color: #007bff; /* Example header background color */
+      color: white; /* Text color for the header */
+      padding: 10px; /* Padding for the header */
+      border-top-left-radius: 8px; /* Rounded top-left corner */
+      border-top-right-radius: 8px; /* Rounded top-right corner */
+    }
+    
+    .user-table-container .card-table-body {
+      padding: 15px; /* Padding for the table body */
+    }
+    
+  
+    .success-message {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    
+  
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+      min-height: 37vh;
+      max-height: 37vh;
+    }
+    
+    .table-container th, .table-container td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .table-container tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .table-container tr:hover {
+      background-color: #ddd;
+    }
+    
+    
+    
+    .user-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem; /* Adjust as needed */
+  
+     
+    }
+    
+    .user-table th, .user-table td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .table-scroll-container {
+      height: 38vh;
+      overflow-y: auto;
+      width: 100%;
+    }
+    
+    .user-table thead th, .user-table tbody td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    /* First Column - Greater Width */
+    .user-table thead th:nth-child(1), .user-table tbody td:nth-child(1) {
+      width: 30%; /* Adjust the percentage as needed */
+    }
+    
+    /* Middle Columns - Same Width */
+    .user-table thead th:nth-child(2), .user-table tbody td:nth-child(2),
+    .user-table thead th:nth-child(3), .user-table tbody td:nth-child(3),
+    .user-table thead th:nth-child(4), .user-table tbody td:nth-child(4) {
+      width: 20%; /* Adjust the percentage as needed */
+    }
+    
+    /* Last Column - Lesser Width */
+    .user-table thead th:last-child, .user-table tbody td:last-child {
+      width: 10%; /* Adjust as needed for the buttons */
+      text-align: center; /* Center-align if it only contains buttons */
+    }
+  
+    .user-table thead {
+      position: sticky; /* Makes the header stick to the top */
+      top: 0; /* Zero distance from the top of the container */
+      z-index: 0; /* Ensure the header is above other content when scrolling */
+     background-color: white; /* Set a background color */
+  
+    }
+    
+    
+    .user-table tbody tr {
+      height: 50px !important;
+      min-height: 50px !important;
+      max-height: 50px !important;
+  }
+  
+    /* Optional: Styling the scrollbar */
+    .table-scroll-container::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+    .table-scroll-container::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+    
+    .table-scroll-container::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    
+    .user-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .user-table th {
+      color: var(--primary-color);
+     
+    }
+    
+    .user-table td {
+      vertical-align: middle;
+    }
+    
+    .user-table td select {
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    
+    .user-table td svg {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  
+    .button-table-users-check:hover{
+      color: #4CAF50;
+    }
+  
+    .button-table-users-delete:hover{
+      color: rgb(209, 3, 3);
+    }
+    
+    /* Responsive table */
+    @media screen and (max-width: 600px) {
+      .user-table th, .user-table td {
+        display: block;
+        width: 100%;
+      }
+      .user-table tr {
+        margin-bottom: 10px;
+      }
+      .user-table td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+      }
+      .user-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+    .role > span {
+      width: 4rem;
+      display: inline-block;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+      border-radius: 0.8rem;
+      color: white;
+      padding: 0.2rem 0.2rem;
+      padding-bottom: 0.3rem;
+      font-size: x-small;
+      
+    }
+    .role span[role="admin"]{
+      background-color: var(--focus-color);
+    }
+  
+    .role span[role="client"]{
+      background-color: #007bff;
+    }
+  
+    .role span[role="producer"]{
+      background-color: #4CAF50;
+    }
+  
+    .role span[role="transformer"]{
+      background-color: var(--primary-color);
+    }
+  
+    .info{
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+      transition: transform 0.1s ease;
+    }
+  
+    .info:hover{
+      color: var(--focus-color);
+    }
+  
+    .info:hover{
+      transform: translateY(2px) ;
+    }
+    .price-input-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .price-input-container input {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
